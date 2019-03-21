@@ -1,0 +1,7 @@
+<div *ngIf="messageService.messages.length">
+  <div class="alert alert-info" *ngFor='let message of messageService.messages'>
+    {{message}}
+    <a href="#" (click)="messageService.clear()" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  </div>
+
+</div>

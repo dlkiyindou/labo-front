@@ -1,0 +1,12 @@
+<h3>Top persons</h3>
+<div class="list-group">
+  <a *ngFor="let person of listPersons"
+     routerLink="/person/{{person.id}}"
+     class="list-group-item list-group-item-action"
+  >
+    {{person.firstname}} {{person.lastname}}
+  </a>
+</div>
+
+
+<!--<app-hero-search></app-hero-search>-->
