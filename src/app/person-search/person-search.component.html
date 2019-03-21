@@ -1,0 +1,14 @@
+<div id="search-component">
+  <h4>Person Search</h4>
+
+  <div class="input-group mb-3">
+    <input #searchBox class="form-control" id="search-box" (input)="search(searchBox.value)" />
+  </div>
+  <ul class="search-result">
+    <li *ngFor="let person of persons$ | async" >
+      <a routerLink="/detail/{{person.id}}">
+        {{person.firstname}} {{person.lastname}}
+      </a>
+    </li>
+  </ul>
+</div>

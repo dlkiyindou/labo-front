@@ -10,6 +10,7 @@ import {PersonsComponent} from './persons/persons.component';
 import {MessagesComponent} from './messages/messages.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {PersonDetailComponent} from './person-detail/person-detail.component';
+import { PersonSearchComponent } from './person-search/person-search.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {PersonDetailComponent} from './person-detail/person-detail.component';
     PersonsComponent,
     MessagesComponent,
     DashboardComponent,
-    PersonDetailComponent
+    PersonDetailComponent,
+    PersonSearchComponent
   ],
   imports: [
     BrowserModule,
